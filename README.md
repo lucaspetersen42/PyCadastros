@@ -67,4 +67,4 @@ Aqui eu explico melhor
 
 
 <h2>Contato</h2>
-<h4>E-mail: </h4> carrijolucas14@gmail.com<
+<h4>E-mail: </h4> carrijolucas14@gmail.com
