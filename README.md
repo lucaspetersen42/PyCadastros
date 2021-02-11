@@ -1,52 +1,70 @@
 # PyCadastros
-<code>pip install git+https://github.com/lucaspetersen42/PyCadastros.git @master</code>
-##Funções Validadoras
-####Validar CPF
-	isValidCPF(cpf, fill=False)
-Aqui eu explico melhor
-<br>
-####Validar CNPJ
-	isValidCPF(cpf, fill=False)
-Aqui eu explico melhor
-<br>
-####Tipo de Cadastro [CPF ou CNPJ]
-	isValidCPF(cpf, fill=False)
-Aqui eu explico melhor
-<br>
-<BR>
+`pip install git+https://github.com/lucaspetersen42/PyCadastros.git @master`
 
-##Funções Formatadoras
-####Formatar CPF
-	isValidCPF(cpf, fill=False)
-Aqui eu explico melhor
-<br>
-####Formatar CNPJ
-	isValidCPF(cpf, fill=False)
-Aqui eu explico melhor
-<br>
-####Formatar Cadastro [CPF ou CNPJ]
-	isValidCPF(cpf, fill=False)
-Aqui eu explico melhor
-<br>
-<BR>
+<h2>Funções Validadoras</h2>
 
-##Funções Geradoras
-####Gerar CPF
-	isValidCPF(cpf, fill=False)
-Aqui eu explico melhor
-<br>
-####Gerar CNPJ
-	isValidCPF(cpf, fill=False)
-Aqui eu explico melhor
-<br>
-#### Gerar Lista de Cadastros
-	isValidCPF(cpf, fill=False)
-Aqui eu explico melhor
-<br>
-#### Gerar Series de Cadastros
-	isValidCPF(cpf, fill=False)
+<h4>Validar CPF</h4>
+<code>isValidCPF(cpf, fill=False)</code>
 Aqui eu explico melhor
 <br>
 
 
-#Contato
+<h4>Validar CNPJ</h4>
+<code>isValidCPF(cpf, fill=False)</code>
+Aqui eu explico melhor
+<br>
+
+<h4>Tipo de Cadastro [CPF ou CNPJ]</h4>
+<code>isValidCPF(cpf, fill=False)</code>
+Aqui eu explico melhor
+<br>
+
+<br>
+
+<h2>Funções Formatadoras</h2>
+
+<h4>Formatar CPF</h4>
+<code>isValidCPF(cpf, fill=False)</code>
+Aqui eu explico melhor
+<br>
+
+
+<h4>Formatar CNPJ</h4>
+<code>isValidCPF(cpf, fill=False)</code>
+Aqui eu explico melhor
+<br>
+
+<h4>Formatar Cadastro [CPF ou CNPJ]</h4>
+<code>isValidCPF(cpf, fill=False)</code>
+Aqui eu explico melhor
+<br>
+
+<br>
+
+<h2>Funções Geradoras</h2>
+
+<h4>Gerar CPF</h4>
+<code>isValidCPF(cpf, fill=False)</code>
+Aqui eu explico melhor
+<br>
+
+
+<h4>Gerar CNPJ</h4>
+<code>isValidCPF(cpf, fill=False)</code>
+Aqui eu explico melhor
+<br>
+
+<h4>Gerar Lista de Cadastros</h4>
+<code>isValidCPF(cpf, fill=False)</code>
+Aqui eu explico melhor
+<br>
+
+<h4>Gerar Series de Cadastros</h4>
+<code>isValidCPF(cpf, fill=False)</code>
+Aqui eu explico melhor
+<br>
+<br>
+
+
+<h2>Contato</h2>
+<h4>E-mail: </h4> carrijolucas14@gmail.com<
