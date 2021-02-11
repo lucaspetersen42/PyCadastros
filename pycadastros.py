@@ -48,51 +48,39 @@ def isValidCPF(cpf, fill=False):
 
 def isValidCNPJ(cnpj, fill=False):
     if fill:
-        cnpjTuple = formatCPF(cnpj)
+        cnpjTuple = formatCNPJ(cnpj)
         cnpj = cnpjTuple[1]
 
     cnpjValores = [(5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2),
                    (6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2)]
 
     cnpj = re.sub(r"\D", "", str(cnpj))
-    cnpjLista = [int(char) for char in str(cnpj)]
-    cnpjMod = [cnpjLista[len(cnpjLista) - 2], cnpjLista[len(cnpjLista) - 1]]
+    cadastro = cnpj[:12]
+    digitos = [int(cnpj[12]), int(cnpj[13])]
 
-    if len(cnpjLista) == 14:
-        cnpjLista.pop()
-        cnpjLista.pop()
+    soma = 0
+    for i in range(len(cadastro)):
+        soma = soma + int(cadastro[i]) * cnpjValores[0][i]
 
+    resto = soma % 11
+    if resto < 2:
+        resto = 0
+    else:
+        resto = 11 - resto
+
+    if resto == digitos[0]:
         soma = 0
-        for valor, digito in zip(cnpjValores[0], cnpjLista):
-            soma += valor * digito
+        for i in range(len(cadastro)):
+            soma = soma + int(cadastro[i]) * cnpjValores[1][i]
 
-        soma *= 10
         resto = soma % 11
-
-        if resto < 2 or resto == 10:
+        if resto < 2:
             resto = 0
-
         else:
             resto = 11 - resto
 
-        if resto == cnpjMod[0]:
-            cnpjLista.append(cnpjMod[0])
-
-            soma = 0
-            for valor, digito in zip(cnpjValores[1], cnpjLista):
-                soma += valor * digito
-
-            soma *= 10
-            resto = soma % 11
-
-            if resto < 2 or resto == 10:
-                resto = 0
-
-            else:
-                resto = 11 - resto
-
-            if resto == cnpjMod[1]:
-                return True
+        if resto == digitos[1]:
+            return True
 
     return False
 
@@ -329,3 +317,4 @@ def generateCNPJ(mask=False, leadingZeros=True):
 # 03279571000103
 # 40362607000136
 # -----------------------------
+
