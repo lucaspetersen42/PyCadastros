@@ -189,8 +189,6 @@ def excelFormatCadastro(cadastro, workbook, validate=False):
         else:
             return None
 
-
-
     else:
 
         if tipoCadastro(cadastro) == 'CPF':
@@ -202,8 +200,6 @@ def excelFormatCadastro(cadastro, workbook, validate=False):
         elif tipoCadastro(cadastro) == 'CNPJ':
 
             cadastroFormat = workbook.add_format({'num_format': '00.000.000/0000-00'})
-
-
 
         else:
 
